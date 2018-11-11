@@ -15,7 +15,7 @@ func main() {
 func testAes() {
 	// AES-128。key长度：16, 24, 32 bytes 对应 AES-128, AES-192, AES-256
 	key := []byte("sfe023f_9fd&fwfl")
-	result, err := AesEncrypt([]byte("polaris@studygolang"), key)
+	result, err := AesEncrypt([]byte("polaris@studygolang"), key)    //作者的邮箱，改变这个就可以得到不同的加密数据
 	if err != nil {
 		panic(err)
 	}
